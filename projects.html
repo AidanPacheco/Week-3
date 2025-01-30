@@ -48,18 +48,34 @@ crossorigin="anonymous"></script>
             </ul>
         </nav>
     </header>
-
-    <section id="projects">
-        <h2>Highlighted Projects</h2>
-        <article>
-            <img src="project1.jpg" alt="Project 1" height="150" width="200">
-            <p><strong>Movie Match:</strong> A responsive web app for searching and getting movie recommendations, built with HTML, CSS, and JavaScript. Integrated with the OMDB API.</p>
-        </article>
-        <article>
-            <img src="project2.jpg" alt="Project 2" height="150" width="200">
-            <p><strong>Task Tamer:</strong> An elegant to-do list app with full CRUD functionality, user authentication, and a Flask backend.</p>
-        </article>
-    </section>
+    
+    
+    <!-- Bootstrap cards-->
+    <main>
+        <section id="projects" class="container py-5">
+            <h2 class="text-center mb-5">Highlighted Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Match</h5>
+                            <p class="card-text">A responsive web app for searching and getting movie recommendations, built with HTML, CSS, and JavaScript. Integrated with the OMDB API.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-dark text-light">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Tamer</h5>
+                            <p class="card-text">An elegant to-do list app with full CRUD functionality, user authentication, and a Flask backend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Aidan Pacheco. All rights reserved.</p>
